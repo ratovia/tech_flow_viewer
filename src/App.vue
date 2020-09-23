@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <webview id="foo" src="https://admin:2222@tech-flow.herokuapp.com/" style="display:inline-flex; width:100vw; height:100vh"></webview>
+    <!-- <webview id="foo" src="http://admin:2222@localhost:3000/" style="display:inline-flex; width:100vw; height:100vh"></webview> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <style>
+html {
+    height: 100%;
+    width: 100%
+}
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
